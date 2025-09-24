@@ -1,0 +1,134 @@
+
+
+/* Genel Ayarlar */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  line-height: 1.6;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+/* Header */
+header {
+  background-color: rgba(0, 74, 173, 0.9);
+  color: white;
+  padding: 10px 20px;
+}
+
+.header-info p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.header-info i {
+  margin-right: 5px;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 5px;
+}
+
+nav .header-title h1 {
+  margin: 0;
+  font-size: 18px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin-left: 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Main Section */
+main {
+  padding: 30px 20px;
+}
+
+/* Başlıklar */
+h1, h2, h3, h5 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Paragraflar */
+p {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+/* Hakkımda Flex Container */
+.hakkimda-container {
+  display: flex;
+  align-items: center; /* dikey ortalama */
+  gap: 20px; /* fotoğraf ile metin arası boşluk */
+  margin-top: 20px;
+  flex-wrap: wrap; /* mobilde alt alta gelir */
+}
+
+.hakkimda-foto {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.hakkimda-text {
+  flex: 1; /* kalan alanı kaplar */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hakkimda-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hakkimda-text {
+    text-align: center;
+  }
+}
+
+
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+}
+
+/* Section arka plan yarı saydam */
+main section {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 20px;
+  border-radius: 10px;
+}
